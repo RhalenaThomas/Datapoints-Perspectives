@@ -3,60 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Datapoints Perspectives – Rhalena Thomas</title>
+  <title>Datapoints Perspective – Rhalena Thomas</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       display: flex;
       min-height: 100vh;
+      flex-direction: column;
     }
+
+    header {
+      background-color: #34495e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
     aside {
       width: 250px;
       background: #2c3e50;
       color: white;
       padding: 20px;
+      min-height: 100%;
     }
+
     aside h1 {
       font-size: 20px;
       margin-top: 0;
     }
+
     aside a {
       color: white;
       text-decoration: none;
       display: block;
       margin: 10px 0;
     }
+
     main {
       flex: 1;
       padding: 40px;
     }
+
     h2 {
       color: #2c3e50;
+    }
+
+    img.logo {
+      max-width: 120px;
+      height: auto;
+      margin: 10px;
     }
   </style>
 </head>
 <body>
-  <aside>
-    <h1>Datapoints Perspectives</h1>
-    <nav>
-      <a href="cv.html">CV</a>
-      <a href="publications.html">Publications</a>
-      <a href="software.html">Software</a>
-      <a href="tutorials.html">Tutorials</a>
-    </nav>
-  </aside>
+  <header>
+    Datapoints & Perspectives
+  </header>
+
+  <div class="container">
+    <aside>
+      <h1>Navigation</h1>
+      <nav>
+        <a href="cv.html">CV</a>
+        <a href="publications.html">Publications</a>
+        <a href="software.html">Software</a>
+        <a href="tutorials.html">Tutorials</a>
+      </nav>
+    </aside>
 
   <main>
     <h2>Welcome to Datapoints & Perspecitves</h2>
-    <p>
-      Hi, I'm <strong>Rhalena Thomas</strong> — a data scientist and researcher working at the intersection of neuroscience, analytics, and translational health research.
-    </p>
-    <p>
-      This site shares insights, tools, and tutorials related to data analysis, statistics, machine learning, programming, neuroscience and health. 
-    </p> 
-      Use the links in the sidebar to find out more.
-    </p>
-  </main>
+   
+      <p>
+        Hi, I'm <strong>Rhalena Thomas</strong> — a data scientist and researcher working at the intersection of neuroscience, analytics, and translational health research.
+        I work at <a href="https://www.mcgill.ca/neuro/" target="_blank">The Neuro</a> in the <a href="https://www.mcgill.ca/edwardfonlab/" target="_blank">Fon Lab</a> and the <a href="https://www.mcgill.ca/neuro/research/eddu" target="_blank">NeuroEDDU</a>. 
+        I also contribute to <a href="https://singlecellclub.openscience.mcgill.ca/" target="_blank">single-cell analysis efforts</a>.
+      </p>
+
+      <p>
+        This site shares insights, tools, and tutorials related to data analysis, statistics, machine learning, programming, neuroscience, and health. Use the links in the sidebar to explore more.
+      </p>
+
+      <!-- Images with links (make sure these images exist in your repo under /images/) -->
+      <div>
+        <a href="https://www.mcgill.ca/neuro/" target="_blank">
+          <img src="images/neuro_logo.png" alt="The Neuro Logo" class="logo" />
+        </a>
+        <a href="https://www.mcgill.ca/edwardfonlab/" target="_blank">
+          <img src="images/fonlab_logo.png" alt="Fon Lab Logo" class="logo" />
+        </a>
+        <a href="https://www.mcgill.ca/neuro/research/eddu" target="_blank">
+          <img src="images/eddu_logo.png" alt="NeuroEDDU Logo" class="logo" />
+        </a>
+        <a href="https://singlecellclub.openscience.mcgill.ca/" target="_blank">
+          <img src="images/singlecell_logo.png" alt="Single Cell Club Logo" class="logo" />
+        </a>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
