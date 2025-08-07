@@ -90,23 +90,21 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);  /* 2 columns */
   gap: 6px;  /* Tight spacing between images */
-  max-width: 400px; /* totatl width */
+  max-width: 400px; /* total width */
   margin-top: 20px auto;
 }
 
 .image-box {
-  width: 100%;
   aspect-ratio: 1 / 1;  /* Forces square box regardless of image dimensions */
   background-color: white;
   overflow: hidden;
-  position: relative;
   border: 1px solid #ddd;
   border-radius: 6px;
   transition: transform 0.3s ease;
 }
 
 .image-box:hover {
-  transform: scale(1.1);  /* Zooms on hover */
+  transform: scale(2);  /* Zooms on hover */
   z-index: 2;
 }
 
