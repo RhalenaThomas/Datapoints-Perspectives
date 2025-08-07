@@ -28,7 +28,7 @@
   /* Sub-banner with logos */
   .logo-bar {
     background-color: #ffffff;
-    border-bottom: 0px solid #ccc;
+    border-bottom: 2px solid #3f7e91;
     padding: 15px;
     display: flex;
     justify-content: space-around;
@@ -85,50 +85,55 @@
     margin-top: 0;
   }
 
-  /* Image grid below text */
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 30px;
+/* Image grid below text */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+  justify-items: center;
+}
+
+/* Set small initial scale, expand on hover */
+.image-grid img {
+  width: 100%;
+  max-width: 180px;          /* Optional: limits how wide the image grows */
+  transform: scale(0.6);     /* Initial small size */
+  transition: transform 0.3s ease;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Hover effect: return to full size */
+.image-grid img:hover {
+  transform: scale(1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
   }
 
-  .image-grid img {
+  aside {
     width: 100%;
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
   }
 
-  .image-grid img:hover {
-    transform: scale(1.05);
+  .image-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .image-grid {
+    grid-template-columns: 1fr;
   }
 
-  /* Responsive tweaks */
-  @media (max-width: 800px) {
-    .container {
-      flex-direction: column;
-    }
-
-    aside {
-      width: 100%;
-    }
-
-    .image-grid {
-      grid-template-columns: 1fr 1fr;
-    }
+  .logo-bar {
+    justify-content: center;
   }
+}
 
-  @media (max-width: 500px) {
-    .image-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .logo-bar {
-      justify-content: center;
-    }
-  }
 </style>
 
 </head>
@@ -184,7 +189,7 @@
   <a href="https://www.cell.com/iscience/fulltext/S2589-0042(24)01838-8"><img src="images/CelltypeR.png" alt="CellTypeR: Cell type quantification and population isoloation using Flow cytometry" /></a>
   <a href="https://doi.org/10.1186/s12859-024-05935-y"><img src="images/scRNAbox.jpg" alt="scRNAbox: a complete single cell transcriptomics workflow for cloud computing" /></a>
   <a href="https://doi.org/10.1186/s13059-025-03643-1"><img src="images/ensemblex.png" alt="Ensemblex: Genetic Demultiplexing toward clinical trials in a dish" /></a>
-  <a href="https://doi.org/10.1101/2024.11.19.24317547"><img src="images/ML.png" alt="DeepLearning classifiers for disease gene signatures." /></a> 
+  <a href="https://doi.org/10.1101/2024.11.19.24317547"><img src="images/ML_1.png" alt="DeepLearning classifiers for disease gene signatures." /></a> 
   </div>
 
       </div>
