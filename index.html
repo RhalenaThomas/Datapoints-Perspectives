@@ -88,20 +88,20 @@
 /* Image grid below text */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  gap: 5px;
+  margin-top: 10px;
   justify-items: center;
 }
 
-/* Set small initial scale, expand on hover */
+/* Scaled down image with minimal white space */
 .image-grid img {
-  width: 100%;
-  max-width: 180px;          /* Optional: limits how wide the image grows */
-  transform: scale(0.6);     /* Initial small size */
+  transform: scale(0.25);
   transition: transform 0.3s ease;
   border: 2px solid #ccc;
   border-radius: 8px;
+  display: block;
+  margin: auto;
 }
 
 /* Hover effect: return to full size */
