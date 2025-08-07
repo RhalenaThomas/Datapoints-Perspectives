@@ -1,0 +1,18 @@
+Adding a command key in VScode
+
+Ctrl + K, Ctrl + S : should open File - Preference - Keyboard Shortcuts (which doesn't exist in the menu) - does nothing 
+
+
+type in help : "keyboard shortcuts"  
+
+this allows opening up the keyboard shortcuts - in my current version of VScode : the "Code" menu, settings, keyboard shortcuts
+
+search for 
+
+workbench.action.terminal.runSelectedText
+
+hover your mouse on the left where you will see a pencil icon - click this and enter a key combination.  Press enter to save
+
+You must enter a key combination that doesn't exist: I used Ctrl + Option + I
+Another suggestion is CTRL + Option + R 
+
