@@ -61,13 +61,48 @@
       height: auto;
       margin: 10px;
     }
+  .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-logo {
+  max-height: 50px;
+  height: auto;
+}
+
   </style>
 </head>
 <body>
   <header>
-    Datapoints & Perspectives
-  </header>
-
+  <div class="header-content">
+    <div class="site-title">Datapoints & Perspectives</div>
+    <div class="header-logos">
+      <a href="https://www.mcgill.ca/neuro/" target="_blank">
+        <img src="images/neuro_logo.png" alt="The Neuro Logo" class="header-logo" />
+      </a>
+      <a href="https://www.mcgill.ca/edwardfonlab/" target="_blank">
+        <img src="images/mcgill_logo.jpg" alt="McGill" class="header-logo" />
+      </a>
+      <a href="https://www.mcgill.ca/neuro/research/eddu" target="_blank">
+        <img src="images/hbhl_logo.png" alt="HBHL" class="header-logo" />
+      </a>
+    </div>
+  </div>
+</header>
   <div class="container">
     <aside>
       <h1>CHECK OUT</h1>
