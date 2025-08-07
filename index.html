@@ -88,59 +88,35 @@
 /* Image grid below text */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px; /* Minimal spacing between boxes */
-  margin-top: 30px;
-  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);  /* 4 columns */
+  gap: 6px;  /* Tight spacing between images */
+  margin-top: 20px;
+  padding: 0;
 }
 
 .image-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;  /* Forces square box regardless of image dimensions */
   background-color: white;
-  width: 150px;
-  height: 150px;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
   position: relative;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
 }
 
-/* Zoom effect on hover */
 .image-box:hover {
-  transform: scale(1.5);
-  z-index: 10;
+  transform: scale(1.1);  /* Zooms on hover */
+  z-index: 2;
 }
 
-/* Image fills box and is cropped */
+/* Image styling */
 .image-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;  /* Crops to fill the square */
   display: block;
 }
-
-/* Responsive tweaks */
-@media (max-width: 800px) {
-  .container {
-    flex-direction: column;
-  }
-
-  aside {
-    width: 100%;
-  }
-
-  .image-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 500px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
 
   .logo-bar {
     justify-content: center;
