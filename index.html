@@ -88,25 +88,38 @@
 /* Image grid below text */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-  gap: 5px;
-  margin-top: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px; /* Minimal spacing between boxes */
+  margin-top: 30px;
   justify-items: center;
 }
 
-/* Scaled down image with minimal white space */
-.image-grid img {
-  transform: scale(0.5);
-  transition: transform 0.3s ease;
+.image-box {
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #ccc;
   border-radius: 8px;
-  display: block;
-  margin: auto;
+  transition: transform 0.3s ease;
+  position: relative;
 }
 
-/* Hover effect: return to full size */
-.image-grid img:hover {
-  transform: scale(2);
+/* Zoom effect on hover */
+.image-box:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
+
+/* Image fills box and is cropped */
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Responsive tweaks */
