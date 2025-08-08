@@ -38,9 +38,9 @@
 
   .logo-bar img {
     height: 75px;
-    max-width: 200px;
+    max-width: 150px;
     object-fit: contain;
-    margin: 0 50px;
+    margin: 12 50px;
   }
 
   /* Container for sidebar and main content */
@@ -120,6 +120,17 @@
   }
 }
 
+.sub-links {
+  margin: 0;
+  padding-left: 1em;
+  list-style: none;
+  font-size: 0.9em;
+}
+
+.sub-links li {
+  margin: 4px 0;
+}
+   
 </style>
 
 </head>
@@ -131,7 +142,7 @@
   <!-- Logo bar under banner -->
   <div class="logo-bar">
     <a href="https://mcgill.ca/" target="_blank">
-      <img src="images/mgill_logo.jpg" alt="McGill" />
+      <img src="images/mgill_logo.png" alt="McGill" />
     </a> 
     <a href="https://www.mcgill.ca/neuro/" target="_blank">
       <img src="images/neuro_logo.png" alt="The Neuro Logo" />
@@ -148,10 +159,18 @@
     <aside>
       <h1>CHECK OUT</h1>
       <nav>
-        <a href="files/PublicationList.pdf" target="_blank" rel="nooperer noreferrer">Publications</a> 
         <a href="software.html">Software</a>
+            <ul class="sub-links">
+      <li><a href="https://github.com/yourusername/Project1" target="_blank">scRNAbox</a></li>
+      <li><a href="https://github.com/yourusername/Project2" target="_blank">Ensemblex</a></li>
+    </ul>
         <a href="tutorials.html">Tutorials</a>
+            <ul class="sub-links">
+      <li><a href="tutorials/tutorial1.pdf" target="_blank">Using Screens</a></li>
+      <li><a href="tutorials/tutorial2.pdf" target="_blank">Interactive HPC</a></li>
+    </ul>
         <a href="files/CV_academic_Aug2025_GH.pdf" target="_blank" rel="nooperer noreferrer">Rhalena Thomas CV</a>
+        <a href="files/PublicationList.pdf" target="_blank" rel="nooperer noreferrer">Publications</a> 
       </nav>
     </aside>
 
