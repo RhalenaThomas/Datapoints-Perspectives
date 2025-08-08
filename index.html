@@ -29,7 +29,7 @@
   .logo-bar {
     background-color: #ffffff;
     border-bottom: 2px solid #3f7e91;
-    padding: 12px;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -40,7 +40,7 @@
     height: 75px;
     max-width: 150px;
     object-fit: contain;
-    margin: 12 50px;
+    margin: 0 50px;
   }
 
   /* Container for sidebar and main content */
@@ -119,16 +119,38 @@
     justify-content: left;
   }
 }
-
-.sub-links {
-  margin: 0;
-  padding-left: 1em;
-  list-style: none;
-  font-size: 0.9em;
+/* Sidebar dropdown container */
+.dropdown {
+  position: relative;
 }
 
-.sub-links li {
-  margin: 4px 0;
+/* Main dropdown toggle (Software, Tutorials) */
+.dropdown-toggle {
+  display: block;
+  font-weight: bold;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+/* The dropdown content: hidden by default */
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+/* Show dropdown content on hover of parent */
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* Style dropdown links */
+.dropdown-content a {
+  font-weight: normal;
+  padding: 3px 0;
+  font-size: 0.95em;
+}
+   
 }
    
 </style>
