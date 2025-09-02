@@ -2,214 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Software Projects</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Software – Datapoints & Perspectives</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Include your banner and sidebar here -->
-  
- <style>
-  /* Base body styling */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+  <header>
+    <h1>Datapoints & Perspectives - Software & Analysis Tools</h1>
+  </header>
 
-  /* Main header banner */
-  header {
-    background-color: #eda03b;
-    color: white;
-    padding: 12px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-  }
+  <!-- Logo bar under banner -->
+  <div class="logo-bar">
+    <a href="https://mcgill.ca/" target="_blank">
+      <img src="images/mcgill_logo.jpg" alt="McGill" />
+    </a> 
+    <a href="https://www.mcgill.ca/neuro/" target="_blank">
+      <img src="images/neuro_logo.png" alt="The Neuro Logo" />
+    </a>
+    <a href="#"><img src="images/hbhl_logo.png" alt="HBHL" /></a>
+    <a href="https://www.mcgill.ca/neuro/research/eddu" target="_blank">
+      <img src="images/NCADD-logo.png" alt="NCADD" />
+    </a>
+  </div>
 
-  /* Sub-banner with logos */
-  .logo-bar {
-    background-color: #ffffff;
-    border-bottom: 2px solid #3f7e91;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .logo-bar img {
-    height: 75px;
-    max-width: 150px;
-    object-fit: contain;
-    margin: 0 50px;
-  }
-
-  /* Container for sidebar and main content */
-  .container {
-    display: flex;
-    flex: 1;
-    min-height: 0;
-  }
-
-  /* Sidebar styling */
-  aside {
-    width: 200px;
-    background: #3f7e91;
-    color: white;
-    padding: 10px;
-  }
-
-  aside h1 {
-    font-size: 20px;
-    margin-top: 0;
-  }
-
-  aside a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin: 10px 0;
-  }
-
-  aside a:hover {
-    text-decoration: underline;
-  }
-
-  /* Main content area */
-  main {
-    flex: 1;
-    padding: 20px;
-  }
-
-  main h2 {
-    color: #3f7e91;
-    margin-top: 0;
-  }
-  <div class="main-content">
-    <h2>Software & Analysis Tools</h2>
- <link rel="stylesheet" href="style.css">
-  <style>
-    main {
-      padding: 20px;
-    }
-    .section-title {
-      color: #3f7e91;
-      margin-top: 30px;
-      margin-bottom: 10px;
-    }
-    .software-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 15px;
-    }
-    .software-card {
-      border: 2px solid #3f7e91;
-      border-radius: 10px;
-      padding: 15px;
-      background: #f9f9f9;
-    }
-    .software-card h3 {
-      margin-top: 0;
-      color: #3f7e91;
-    }
-  </style>
-</head>
-<body>
   <div class="container">
-    <!-- Sidebar stays the same as index.html -->
+    <!-- Sidebar -->
     <aside>
-      <h2>Menu</h2>
-      <a href="index.html">Home</a>
-      <a href="cv.html">CV</a>
-      <a href="publications.html">Publications</a>
-      <a href="software.html" class="dropdown-toggle">Software</a>
-      <div class="dropdown-content">
-        <strong>Machine Learning</strong>
-        <a href="https://github.com/mfiorini9/scRNAseq-NN-LIME" target="_blank">Transcriptome Classifier</a>
-        <a href="https://neurobioinfo.github.io/ensemblex/site/" target="_blank">Genetic Demultiplexing</a>
-        <a href="https://github.com/RhalenaThomas/DeepLearningCNN_DiseaseStatusClassifier" target="_blank">Microscopy Classifier</a>
-        <strong>Data Analysis</strong>
-        <a href="https://github.com/neuroeddu/Auto-qPCR" target="_blank">Auto-qPCR</a>
-        <a href="https://neurobioinfo.github.io/scrnabox/site/" target="_blank">scRNAbox</a>
-        <a href="https://github.com/RhalenaThomas/CelltypeR" target="_blank">CelltypeR</a>
-        <a href="https://github.com/RhalenaThomas/AXION_spike_analysis" target="_blank">MEA Analysis</a>
-        <strong>Microscopy</strong>
-        <a href="https://github.com/RhalenaThomas/AutomatedCiliaMeasurements" target="_blank">Cilia Quant</a>
-        <a href="https://github.com/neuroeddu/HistQ" target="_blank">HistQ</a>
-        <a href="https://github.com/neuroeddu/CellQ" target="_blank">CellQ</a>
-        <a href="https://github.com/neuroeddu/OrgM" target="_blank">OrgM</a>
-        <a href="https://github.com/neuroeddu/OrgQ" target="_blank">OrgQ</a>
-      </div>
+      <h1>CHECK OUT</h1>
+      <nav>
+        <!-- Software Dropdown -->
+        <div class="dropdown">
+          <a href="software.html" class="dropdown-toggle">Software</a>
+          <div class="dropdown-content">
+            <strong>Machine Learning</strong>
+            <a href="https://github.com/mfiorini9/scRNAseq-NN-LIME" target="_blank">Transcriptome Disease Classifier</a>
+            <a href="https://neurobioinfo.github.io/ensemblex/site/" target="_blank">Genetic Demultiplexing</a>
+            <a href="https://github.com/RhalenaThomas/DeepLearningCNN_DiseaseStatusClassifier" target="_blank">Microscopy Disease Classifier</a>
+<strong>Analysis Workflows</strong>
+            <a href="https://github.com/neuroeddu/Auto-qPCR" target="_blank">Auto-qPCR</a>
+            <a href="https://neurobioinfo.github.io/scrnabox/site/" target="_blank">scRNAbox</a>
+            <a href="https://github.com/RhalenaThomas/CelltypeR" target="_blank">CelltypeR</a>
+            <a href="https://github.com/RhalenaThomas/AXION_spike_analysis" target="_blank">MEA</a>
+
+            <strong>Microscopy</strong>
+            <a href="https://github.com/RhalenaThomas/AutomatedCiliaMeasurements" target="_blank">Cilia quantification</a>
+            <a href="https://github.com/neuroeddu/HistQ" target="_blank">HistQ</a>
+            <a href="https://github.com/neuroeddu/CellQ" target="_blank">CellQ</a>
+            <a href="https://github.com/neuroeddu/OrgM" target="_blank">OrgM</a>
+            <a href="https://github.com/neuroeddu/OrgQ" target="_blank">OrgQ</a>
+          </div>
+        </div>
+
+        <!-- Tutorials Dropdown -->
+        <div class="dropdown">
+          <a href="tutorials.html" class="dropdown-toggle">Tutorials</a>
+          <div class="dropdown-content">
+            <a href="tutorials/tutorial1.pdf" target="_blank">Using Screens</a>
+            <a href="tutorials/tutorial2.pdf" target="_blank">Interactive HPC</a>
+          </div>
+        </div>
+
+        <!-- About Me Dropdown -->
+        <div class="dropdown">
+          <a href="aboutme.html" class="dropdown-toggle">About Me</a>
+          <div class="dropdown-content">
+            <a href="files/CV_academic_Aug2025_GH.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="files/PublicationList.pdf" target="_blank" rel="noopener noreferrer">Publications</a>
+          </div>
+        </div>
+      </nav>
     </aside>
 
+    <!-- Main Content -->
     <main>
-      <h1>Software Portfolio</h1>
-      <p>Below are selected open-source projects with links to GitHub repositories and publications.</p>
+      <h2>Software Portfolio</h2>
+      <p>Below are selected open-source software packages I have developed. Each box links to the GitHub repository, and a corresponding paper link is provided when available.</p>
 
-      <!-- Machine Learning Section -->
-      <h2 class="section-title">Machine Learning</h2>
-      <div class="software-grid">
-        <div class="software-card">
-          <h3>Transcriptome Disease Classifier</h3>
-          <p><a href="https://github.com/mfiorini9/scRNAseq-NN-LIME" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
+      <div class="image-grid">
+        <!-- Machine Learning -->
+        <div class="image-box">
+          <a href="https://github.com/mfiorini9/scRNAseq-NN-LIME" target="_blank">
+            <img src="images/ML_1.png" alt="Transcriptome Disease Classifier">
+          </a>
+          <p>Transcriptome Disease Classifier | <a href="DOI-link.html">Paper</a></p>
         </div>
-        <div class="software-card">
-          <h3>Genetic Demultiplexing</h3>
-          <p><a href="https://neurobioinfo.github.io/ensemblex/site/" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
-        </div>
-        <div class="software-card">
-          <h3>Microscopy Disease Classifier</h3>
-          <p><a href="https://github.com/RhalenaThomas/DeepLearningCNN_DiseaseStatusClassifier" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
-        </div>
-      </div>
 
-      <!-- Data Analysis Section -->
-      <h2 class="section-title">Data Analysis</h2>
-      <div class="software-grid">
-        <div class="software-card">
-          <h3>Auto-qPCR</h3>
-          <p><a href="https://github.com/neuroeddu/Auto-qPCR" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
+        <div class="image-box">
+          <a href="https://neurobioinfo.github.io/ensemblex/site/" target="_blank">
+            <img src="images/ensemblex.png" alt="Genetic Demultiplexing">
+          </a>
+          <p>Genetic Demultiplexing | <a href="DOI-link.html">Paper</a></p>
         </div>
-        <div class="software-card">
-          <h3>scRNAbox</h3>
-          <p><a href="https://neurobioinfo.github.io/scrnabox/site/" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
-        </div>
-        <div class="software-card">
-          <h3>CelltypeR</h3>
-          <p><a href="https://github.com/RhalenaThomas/CelltypeR" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
-        </div>
-        <div class="software-card">
-          <h3>MEA Analysis</h3>
-          <p><a href="https://github.com/RhalenaThomas/AXION_spike_analysis" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
-        </div>
-      </div>
 
-      <!-- Microscopy Section -->
-      <h2 class="section-title">Microscopy</h2>
-      <div class="software-grid">
-        <div class="software-card">
-          <h3>Cilia Quantification</h3>
-          <p><a href="https://github.com/RhalenaThomas/AutomatedCiliaMeasurements" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
+        <div class="image-box">
+          <a href="https://github.com/RhalenaThomas/DeepLearningCNN_DiseaseStatusClassifier" target="_blank">
+            <img src="images/ML_2.png" alt="Microscopy Disease Classifier">
+          </a>
+          <p>Microscopy Disease Classifier | <a href="DOI-link.html">Paper</a></p>
         </div>
-        <div class="software-card">
-          <h3>HistQ</h3>
-          <p><a href="https://github.com/neuroeddu/HistQ" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
+
+        <!-- Analysis Workflows -->
+        <div class="image-box">
+          <a href="https://github.com/neuroeddu/Auto-qPCR" target="_blank">
+            <img src="images/Auto-qPCR.png" alt="Auto-qPCR">
+          </a>
+          <p>Auto-qPCR | <a href="DOI-link.html">Paper</a></p>
         </div>
-        <div class="software-card">
-          <h3>CellQ</h3>
-          <p><a href="https://github.com/neuroeddu/CellQ" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
+
+        <div class="image-box">
+          <a href="https://neurobioinfo.github.io/scrnabox/site/" target="_blank">
+            <img src="images/scRNAbox.jpg" alt="scRNAbox">
+          </a>
+          <p>scRNAbox | <a href="DOI-link.html">Paper</a></p>
         </div>
-        <div class="software-card">
-          <h3>OrgM</h3>
-          <p><a href="https://github.com/neuroeddu/OrgM" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
+
+        <div class="image-box">
+          <a href="https://github.com/RhalenaThomas/CelltypeR" target="_blank">
+            <img src="images/CelltypeR.png" alt="CelltypeR">
+          </a>
+          <p>CelltypeR | <a href="DOI-link.html">Paper</a></p>
         </div>
-        <div class="software-card">
-          <h3>OrgQ</h3>
-          <p><a href="https://github.com/neuroeddu/OrgQ" target="_blank">GitHub Repo</a> | <a href="DOI-link.html" target="_blank">Publication</a></p>
+
+        <div class="image-box">
+          <a href="https://github.com/RhalenaThomas/AXION_spike_analysis" target="_blank">
+            <img src="images/MEA.png" alt="MEA">
+          </a>
+          <p>MEA | <a href="DOI-link.html">Paper</a></p>
         </div>
-      </div>
+
+        <!-- Microscopy -->
+        <div class="image-box">
+          <a href="https://github.com/RhalenaThomas/AutomatedCiliaMeasurements" target="_blank">
+            <img src="images/Cilia.png" alt="Cilia quantification">
+          </a>
+          <p>Cilia quantification | <a href="DOI-link.html">Paper</a></p>
+        </div>
+
+        <div class="image-box">
+          <a href="https://github.com/neuroeddu/HistQ" target="_blank">
+            <img src="images/HistQ.png" alt="HistQ">
+          </a>
+          <p>HistQ | <a href="DOI-link.html">Paper</a></p>
+        </div>
+
+        <div class="image-box">
+          <a href="https://github.com/neuroeddu/CellQ" target="_blank">
+            <img src="images/CellQ.png" alt="CellQ">
+          </a>
+          <p>CellQ | <a href="DOI-link.html">Paper</a></p>
+        </div>
+
+        <div class="image-box">
+          <a href="https://github.com/neuroeddu/OrgM" target="_blank">
+            <img src="images/OrgM.png" alt="OrgM">
+          </a>
+          <p>OrgM | <a href="DOI-link.html">Paper</a></p>
+        </div>
+
+        <div class="image-box">
+          <a href="https://github.com/neuroeddu/OrgQ" target="_blank">
+            <img src="images/OrgQ.png" alt="OrgQ">
+          </a>
+          <p>OrgQ | <a href="DOI-link.html">Paper</a></p>
+        </div>
+
+      </div> <!-- end image-grid -->
+
     </main>
   </div>
 </body>
