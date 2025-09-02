@@ -1,0 +1,84 @@
+/* Global */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: #0056b3;   /* Deep blue for links */
+  text-decoration: none;
+}
+a:hover {
+  color: #003d80;   /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f0f0f0;  /* Light grey */
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  min-height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  margin-top: 0;
+  color: #333;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 8px 0;
+}
+
+/* Main content */
+.content {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content h1, .content h2, .content h3 {
+  color: #111;
+  margin-top: 1.2em;
+}
+
+.content p {
+  margin-bottom: 1em;
+}
+
+/* Section headers */
+.section-title {
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+/* Lists of software/projects */
+.project-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-list li {
+  margin-bottom: 12px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
