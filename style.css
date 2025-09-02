@@ -1,69 +1,189 @@
-/* ====== Global Styles ====== */
+/* ====== Base Styling ====== */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  background-color: #f8f9fa;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* ====== Header Banner ====== */
+header {
+    background-color: #eda03b;
+    color: white;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ====== Logo / Subheader Bar ====== */
+.logo-bar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #3f7e91;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.logo-bar img {
+    height: 75px;
+    max-width: 150px;
+    object-fit: contain;
+}
+
+/* ====== Container ====== */
+.container {
+    display: flex;
+    flex: 1;
+    min-height: 0;
 }
 
 /* ====== Sidebar ====== */
-.sidebar {
-  width: 240px;
-  background-color: #003366; /* deep blue */
-  color: white;
-  position: fixed;
-  height: 100%;
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+aside {
+    width: 200px;
+    background-color: #3f7e91;
+    color: white;
+    padding: 15px;
+    flex-shrink: 0;
 }
 
-.sidebar h2 {
-  font-size: 1.2em;
-  margin-bottom: 1em;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  padding-bottom: 0.5em;
+aside h1 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
-.sidebar a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  padding: 8px 0;
-  transition: background 0.2s ease-in-out;
+aside nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 8px 0;
+    font-size: 0.95em;
 }
 
-.sidebar a:hover {
-  background-color: #00509e; /* lighter blue hover */
-  padding-left: 5px;
+aside nav a:hover {
+    text-decoration: underline;
 }
 
-/* ====== Main Content ====== */
-.content {
-  margin-left: 260px;
-  padding: 30px;
-  max-width: 900px;
+/* Dropdowns */
+.dropdown {
+    position: relative;
 }
 
-/* ====== Headings ====== */
-h1, h2, h3 {
-  color: #003366;
+.dropdown-toggle {
+    display: block;
+    font-weight: bold;
+    padding: 3px 0;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a {
+    font-weight: normal;
+    padding: 2px 0;
+    font-size: 0.95em;
+    line-height: 1.2;
+}
+
+/* ====== Main Content Area ====== */
+main {
+    flex: 1;
+    padding: 25px;
+    min-width: 0; /* allow flex shrinking */
+}
+
+main h2 {
+    color: #3f7e91;
+    margin-top: 0;
+}
+
+main p {
+    margin: 10px 0 15px 0;
+    line-height: 1.6;
+}
+
+/* ====== Image Grid ====== */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.image-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border: 2px solid #3f7e91;
+    border-radius: 10px;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+    transform: scale(1.5);
 }
 
 /* ====== Links ====== */
 a {
-  color: #00509e;
-}
-a:hover {
-  text-decoration: underline;
+    color: #ffffff;
 }
 
-/* ====== Section Boxes ====== */
-.section {
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Responsive ====== */
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        padding: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-bar img {
+        height: 50px;
+        margin: 0 10px;
+    }
 }
