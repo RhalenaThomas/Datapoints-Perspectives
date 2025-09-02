@@ -1,260 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Datapoints Perspective – Rhalena Thomas</title>
-  
- <style>
-  /* Base body styling */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Main header banner */
-  header {
-    background-color: #eda03b;
-    color: white;
-    padding: 12px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  /* Sub-banner with logos */
-  .logo-bar {
-    background-color: #ffffff;
-    border-bottom: 2px solid #3f7e91;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .logo-bar img {
-    height: 75px;
-    max-width: 150px;
-    object-fit: contain;
-    margin: 0 50px;
-  }
-
-  /* Container for sidebar and main content */
-  .container {
-    display: flex;
-    flex: 1;
-    min-height: 0;
-  }
-
-  /* Sidebar styling */
-  aside {
-    width: 200px;
-    background: #3f7e91;
-    color: white;
-    padding: 10px;
-  }
-
-  aside h1 {
-    font-size: 20px;
-    margin-top: 0;
-  }
-
-  aside a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin: 10px 0;
-  }
-
-  aside a:hover {
-    text-decoration: underline;
-  }
-
-  /* Main content area */
-  main {
-    flex: 1;
-    padding: 20px;
-  }
-
-  main h2 {
-    color: #3f7e91;
-    margin-top: 0;
-  }
-
-/* Image grid below text */
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);  /* 4 columns */
-  gap: 10px;  /* small gap between boxes */
-  max-width: 1200px; /* changing this value has no imact on image size */
-  margin: 10px auto;
-}
-
-.image-box {
-  width: 100%;
-  aspect-ratio: 1 / 1;  /* Forces square boxes */
-  overflow: hidden;
-  border: 2px solid #3f7e91;
-  border-radius: 10px;
-  position: relative;
-}
-
-.image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;  /* Fills box, crops if necessary */
-  transition: transform 0.3s ease;
-}
-
-.image-box img:hover {
-  transform: scale(1.5);  /* Slight zoom on hover */
-}
-
-  .logo-bar {
-    justify-content: center;
-  }
-}
-/* Sidebar dropdown container */
-.dropdown {
-  position: relative;
-}
-
-/* Main dropdown toggle (Software, Tutorials) */
-.dropdown-toggle {
-  display: block;
-  font-weight: bold;
-  padding: 1px 0; /* reduce vertical spacing */
-  cursor: pointer;
-  line-height: 1; /* control line spacing more tightly */
-}
-
-/* The dropdown content: hidden by default */
-.dropdown-content {
-  display: none;
-  flex-direction: column;
-  padding-left: 15px;
-}
-
-/* Show dropdown content on hover of parent */
-.dropdown:hover .dropdown-content {
+/* ====== Global Styles ====== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-/* Style dropdown links */
-.dropdown-content a {
-  font-weight: normal;
-  padding: 0px 0;
-  font-size: 0.95em;
-  line-height: 1;
+/* ====== Sidebar ====== */
+.sidebar {
+  width: 240px;
+  background-color: #003366; /* deep blue */
+  color: white;
+  position: fixed;
+  height: 100%;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
-   
+
+.sidebar h2 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 0.5em;
 }
-   
-</style>
 
-</head>
-<body>
-  <header>
-  <h1>Datapoints & Perspectives by Rhalena Thomas</h1>
-  </header>
-  
-  <!-- Logo bar under banner -->
-  <div class="logo-bar">
-    <a href="https://mcgill.ca/" target="_blank">
-      <img src="images/mcgill_logo.jpg" alt="McGill" />
-    </a> 
-    <a href="https://www.mcgill.ca/neuro/" target="_blank">
-      <img src="images/neuro_logo.png" alt="The Neuro Logo" />
-    </a>
-    <a 
-      <img src="images/hbhl_logo.png" alt="HBHL" />
-    </a>
-    <a href="https://www.mcgill.ca/neuro/research/eddu" target="_blank">
-      <img src="images/NCADD-logo.png" alt="NCADD" />
-    </a>
-  </div>
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: background 0.2s ease-in-out;
+}
 
-  <div class="container">
-    <aside>
-      <h1>CHECK OUT</h1>
-      <nav>
-         <div class="dropdown">
-        <!-- call the file for setting up the software -->
-        <a href="software.html" class="dropdown-toggle">Software</a>
-        <div class="dropdown-content">
-        <a href="https://neurobioinfo.github.io/scrnabox/site/" target="_blank">scRNAbox</a>
-        <a href="https://github.com/neurobioinfo/ensemblex/" target="_blank">Ensemblex</a>
-    </div>
-      </div>
+.sidebar a:hover {
+  background-color: #00509e; /* lighter blue hover */
+  padding-left: 5px;
+}
 
-    <div class="dropdown">    
-         <!-- call the file for setting up the tutorial links -->
-        <a href="tutorials.html" class="dropdown-toggle">Tutorials</a>
-         <div class="dropdown-content">
-        <a href="tutorials/tutorial1.pdf" target="_blank">Using Screens</a>
-       <a href="tutorials/tutorial2.pdf" target="_blank">Interactive HPC</a>
-   </div>
-      </div>
-        <a href="files/CV_academic_Aug2025_GH.pdf" target="_blank" rel="nooperer noreferrer">Rhalena Thomas CV</a>
-        <a href="files/PublicationList.pdf" target="_blank" rel="nooperer noreferrer">Publications</a> 
-      </nav>
-    </aside>
+/* ====== Main Content ====== */
+.content {
+  margin-left: 260px;
+  padding: 30px;
+  max-width: 900px;
+}
 
-  <main>
-    <h2>Welcome to Datapoints & Perspecitves</h2>
-   
-      <p>
-        Hi, I'm <strong>Rhalena Thomas</strong> — a data scientist and researcher working at the intersection of neuroscience, analytics, and translational health research.
-        I work at <a href="https://www.mcgill.ca/neuro/" target="_blank">The Neuro</a> in the <a href="https://www.mcgill.ca/edwardfonlab/" target="_blank">Fon Lab</a> and the <a href="https://www.mcgill.ca/neuro/research/eddu" target="_blank">NeuroEDDU</a>. 
-        I also promote <a href="https://www.mcgill.ca/neuro/open-science/tanenbaum-open-science-institute-tosi/promoting-open-science-across-canada" target="_blank">open science</a> and contribut to the <a href="https://singlecellclub.openscience.mcgill.ca/" target="_blank">Single Cell Club</a>.
-      </p>
+/* ====== Headings ====== */
+h1, h2, h3 {
+  color: #003366;
+}
 
-      <p>
-        This site shares insights, tools, and tutorials related to data analysis, statistics, machine learning, programming, neuroscience, and health. 
-      </p>
-<!-- Images with links (make sure these images exist in your repo under /images/) -->
-<div>
-  <h3>Featured Projects</h3>
-  <div class="container">
-    <div class="image-grid">
-      
-      <div class="image-box">
-        <a href="https://www.cell.com/iscience/fulltext/S2589-0042(24)01838-8">
-          <img src="images/CelltypeR.png" alt="CellTypeR: Cell type quantification and population isoloation using Flow cytometry" />
-        </a>
-      </div>
-      
-      <div class="image-box">
-        <a href="https://doi.org/10.1186/s12859-024-05935-y">
-          <img src="images/scRNAbox.jpg" alt="scRNAbox: a complete single cell transcriptomics workflow for cloud computing" />
-        </a>
-      </div>
-      
-      <div class="image-box">
-        <a href="https://doi.org/10.1186/s13059-025-03643-1">
-          <img src="images/ensemblex.png" alt="Ensemblex: Genetic Demultiplexing toward clinical trials in a dish" />
-        </a>
-      </div>
-      
-      <div class="image-box">
-        <a href="https://doi.org/10.1101/2024.11.19.24317547">
-          <img src="images/ML_1.png" alt="DeepLearning classifiers for disease gene signatures." />
-        </a>
-      </div>
+/* ====== Links ====== */
+a {
+  color: #00509e;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-    </div> <!-- end of image-grid -->
-  </div> <!-- end of container -->
-</div>
-
-      <p>
-    This site is still a work in progress. 
-  </p>
-    </main>
-  </div>
-</body>
-</html>
+/* ====== Section Boxes ====== */
+.section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
