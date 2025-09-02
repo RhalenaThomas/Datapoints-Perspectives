@@ -6,7 +6,7 @@
 2. If you drop you internet connection or for some other reason get bumped out of your HPC your task will keep running.
 3. Always work in a screen when working in interactive mode. One most clusters you cannot access the internet instide of your interactive mode. If you are inside base R or working in python you would have to close your session to get file pathways or similar items (not practical).
 
-- So screens are good but how do you use them?
+- So screens are good but, how do you use them?
 
 1. Make a screen with this command
 
