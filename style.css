@@ -1,84 +1,69 @@
-/* Global */
+/* ====== Global Styles ====== */
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  color: #222;
-  background-color: #fafafa;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
-/* Links */
-a {
-  color: #0056b3;   /* Deep blue for links */
-  text-decoration: none;
-}
-a:hover {
-  color: #003d80;   /* Darker blue on hover */
-  text-decoration: underline;
-}
-
-/* Sidebar */
+/* ====== Sidebar ====== */
 .sidebar {
-  background-color: #f0f0f0;  /* Light grey */
+  width: 240px;
+  background-color: #003366; /* deep blue */
+  color: white;
+  position: fixed;
+  height: 100%;
   padding: 20px;
-  border-right: 1px solid #ddd;
-  min-height: 100vh;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 .sidebar h2 {
   font-size: 1.2em;
-  margin-top: 0;
-  color: #333;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 8px 0;
-}
-
-/* Main content */
-.content {
-  padding: 40px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.content h1, .content h2, .content h3 {
-  color: #111;
-  margin-top: 1.2em;
-}
-
-.content p {
   margin-bottom: 1em;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 0.5em;
 }
 
-/* Section headers */
-.section-title {
-  border-bottom: 2px solid #0056b3;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: background 0.2s ease-in-out;
 }
 
-/* Lists of software/projects */
-.project-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.sidebar a:hover {
+  background-color: #00509e; /* lighter blue hover */
+  padding-left: 5px;
 }
 
-.project-list li {
-  margin-bottom: 12px;
+/* ====== Main Content ====== */
+.content {
+  margin-left: 260px;
+  padding: 30px;
+  max-width: 900px;
 }
 
-/* Footer */
-.footer {
-  text-align: center;
+/* ====== Headings ====== */
+h1, h2, h3 {
+  color: #003366;
+}
+
+/* ====== Links ====== */
+a {
+  color: #00509e;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Section Boxes ====== */
+.section {
+  background: white;
   padding: 20px;
-  font-size: 0.9em;
-  color: #666;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
