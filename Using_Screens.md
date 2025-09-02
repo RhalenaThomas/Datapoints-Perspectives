@@ -1,4 +1,4 @@
-# Using screens 
+# Using screens in your terminal with cloud computing
 
 - In HPC it is the best practice to use "screens" this is like a separate window/desktop/tab but you are inside the same session.
 - Why?  
