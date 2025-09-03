@@ -559,15 +559,17 @@ document.querySelectorAll(".collapsible-header").forEach(header => {
 </script>
 
 <style>
-  /* Add spacing between publications/abstracts list items */
 #publications ol li,
 #conference-abstracts ol li {
-    margin-bottom: 1em;  /* Adjust space between items */
+    display: block;
+    margin-bottom: 1em;  /* space between entries */
 }
-.collapsible-content {
-  display: none;
-  margin-left: 1rem;
+
+#publications ol,
+#conference-abstracts ol {
+    line-height: 1.4;    /* keeps wrapped lines compact */
 }
+
 
 .collapsible-header {
   font-size: 1.7rem;
