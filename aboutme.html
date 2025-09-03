@@ -557,36 +557,38 @@ document.querySelectorAll(".collapsible-header").forEach(header => {
   });
 });
 </script>
-
 <style>
+/* --- Spacing for publications and abstracts --- */
 #publications ol li,
 #conference-abstracts ol li {
-    display: block;
-    margin-bottom: 1em;  /* space between entries */
+    margin-bottom: 1em;   /* space between numbered items */
+    line-height: 1.4;     /* keeps wrapped lines compact */
 }
 
-#publications ol,
-#conference-abstracts ol {
-    line-height: 1.4;    /* keeps wrapped lines compact */
+/* --- Collapsible sections --- */
+.collapsible-content {
+    display: none;
+    margin-left: 1rem;
 }
-
 
 .collapsible-header {
-  font-size: 1.7rem;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
-  user-select: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    user-select: none;
+}
+
+/* Arrow after header */
+.collapsible-header::after {
+    content: " ▼";     /* show downward arrow by default */
+    font-size: 0.8em;
+    margin-left: 0.3em;
+    color: #000;       /* remove grey color */
 }
 
 .collapsible-header.expanded::after {
-  content: " ▲";
-}
-.collapsible-header::after {
-  content: " ▼";
-  font-size: 0.8em;
-  margin-left: 0.3em;
-  color: #555;
+    content: " ▲";     /* show upward arrow when expanded */
 }
 </style>
