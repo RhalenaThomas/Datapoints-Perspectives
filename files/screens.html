@@ -175,7 +175,7 @@
 
   <script>
     // Load markdown file
-    fetch("Using_Screens.md")
+    fetch("../Using_Screens.md")
       .then(res => res.text())
       .then(text => {
         document.getElementById("content").innerHTML = marked.parse(text);
