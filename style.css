@@ -143,3 +143,38 @@ main p {
         position: relative;
     }
 }
+/* ====== Image Grid ====== */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 1000px;   /* keeps it from being huge */
+    margin: 20px auto;
+}
+
+.image-box {
+    background: white;
+    border: 2px solid #3f7e91;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-box img:hover {
+    transform: scale(1.05);
+}
+
+.image-box p {
+    font-size: 0.9em;
+    color: #333;
+    margin: 0;
+}
