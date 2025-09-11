@@ -211,3 +211,28 @@ main a:hover {
         margin: 0 10px;
     }
 }
+
+/* Smooth scrolling to anchors (optional but nice) */
+html { scroll-behavior: smooth; }
+
+/* Sidebar nav groups */
+.sidebar-nav { display: block; }
+.sidebar-nav .nav-group { 
+  list-style: none; 
+  margin: 1rem 0 1.25rem; 
+  padding: 0; 
+}
+.sidebar-nav .nav-group .nav-heading > a {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.35rem;
+  text-decoration: none;
+}
+.sidebar-nav .nav-group li:not(.nav-heading) a {
+  display: block;
+  padding-left: 1rem;      /* indentation for subitems */
+  line-height: 1.4;
+  text-decoration: none;
+}
+.sidebar-nav a:hover { text-decoration: underline; }
+
