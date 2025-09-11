@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>using screens</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 
+  <!-- Marked.js -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <style>
+    /* Markdown container */
+    #content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Copy button */
+    .copy-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: #3f7e91;
+      color: #fff;
+      border: none;
+      padding: 4px 8px;
+      font-size: 0.8em;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    pre {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Datapoints & Perspectives - Using Screens</h1>
+</header>
+
+<!-- Logo bar under banner -->
+<div class="logo-bar">
+  <a href="https://mcgill.ca/" target="_blank">
+    <img src="images/mcgill_logo.jpg" alt="McGill" />
+  </a>
+  <a href="https://www.mcgill.ca/neuro/" target="_blank">
+    <img src="images/neuro_logo.png" alt="The Neuro Logo" />
+  </a>
+  <a>
+    <img src="images/hbhl_logo.png" alt="HBHL" />
+  </a>
+  <a href="https://www.mcgill.ca/neuro/research/eddu" target="_blank">
+    <img src="images/NCADD-logo.png" alt="NCADD" />
+  </a>
+</div>
+
+<div class="container">
+  <!-- Sidebar -->
+  <aside>
+    <h1>CHECK OUT</h1>
+    <nav>
+      <!-- Home link -->
+      <a href="index.html">Home</a>
+
+      <!-- Software Dropdown -->
+      <div class="dropdown">
+        <a href="software.html" class="dropdown-toggle">Software</a>
+        <div class="dropdown-content">
+    <a href="software.html#machine-learning"><strong>Machine Learning</strong></a>
+        <div class="sub-link">     
+          <a href="https://github.com/mfiorini9/scRNAseq-NN-LIME" target="_blank">Transcriptomics Disease Classifier</a>
+          <a href="https://neurobioinfo.github.io/ensemblex/site/" target="_blank">Genetic Demultiplexing</a>
+          <a href="https://github.com/RhalenaThomas/DeepLearningCNN_DiseaseStatusClassifier" target="_blank">Microscopy Image Disease Classifier</a>
+    </div>
+    <a href="software.html#analysis"><strong>Analysis Workflows</strong></a>
+          <div class="sub-link">     
+          <a href="https://github.com/neuroeddu/Auto-qPCR" target="_blank">Auto-qPCR DNA & RNA</a>
+          <a href="https://neurobioinfo.github.io/scrnabox/site/" target="_blank">scRNAbox transcriptomics</a>
+          <a href="https://github.com/RhalenaThomas/CelltypeR" target="_blank">CelltypeR flow cytometry</a>
+          <a href="https://github.com/RhalenaThomas/AXION_spike_analysis" target="_blank">MEA burst and networks</a>
+   </div>
+           <a href="software.html#microscopy"><strong>Microscopy</strong></a>
+               <div class="sub-link">  
+          <a href="https://github.com/RhalenaThomas/AutomatedCiliaMeasurements" target="_blank">Cilia quantification</a>
+          <a href="https://github.com/neuroeddu/HistQ" target="_blank">HistQ Tissue Sections</a>
+          <a href="https://github.com/neuroeddu/CellQ" target="_blank">CellQ Neuronal Culture</a>
+          <a href="https://github.com/neuroeddu/OrgM" target="_blank">OrgM Measure Organoid Size</a>
+          <a href="https://github.com/neuroeddu/OrgQ" target="_blank">OrgQ Cell level in Organoids</a>
+                    </div>
+        </div>
+      </div>
+
+ <!-- Learning & Resources Dropdown -->
+ <!-- Learning & Resources Dropdown -->
+<div class="dropdown">
+  <a href="learning.html" class="dropdown-toggle">Learning & Resources</a>
+  <div class="dropdown-content">
+  <a href="learning.html"><strong>Guides</strong></a>
+    <div class="sub-link">  
+    <a href="Using_Screens.md" target="_blank">Using Screens</a>
+       </div> 
+  <a href="learning.html"><strong>Workshops & Workbooks</strong></a>
+        <div class="sub-link">  
+   <a href="https://github.com/RhalenaThomas/SingleCell_Workshop" target="_blank">The Neuro Single Cell Workshops</a> 
+   <a href="https://github.com/RhalenaThomas/MiMC_scRNAseqWorkshop" target="_blank">MiCM Single Cell Workshop</a> 
+    </div> 
+  <a href="learning.html"><strong>Helpful Links</strong></a>
+    <!-- Future sections (commented out) -->
+    <!-- <strong>Video</strong> -->
+    <!-- <a href="learning/video1.html" target="_blank">Video 1</a> -->
+
+    <!-- <strong>Blog</strong> -->
+    <!-- <a href="learning/blog1.html" target="_blank">Blog Post 1</a> -->
+
+    <!-- <strong>Helpful Links</strong> -->
+    <!-- <a href="https://example.com" target="_blank">Example Link</a> -->
+  </div>
+</div>
+
+<!-- About Me Dropdown -->
+      <!-- About Me Dropdown -->
+      <div class="dropdown">
+        <a href="aboutme.html" class="dropdown-toggle">About Me</a>
+        <div class="dropdown-content">
+         
+    <!-- Research Summary -->
+    <a href="aboutme.html#research-summary"><strong>Research Summary</strong></a>
+
+    <!-- Education & Training -->
+    <a href="aboutme.html#education-training"><strong>Education & Training</strong></a>
+    <div class="sub-link">
+      <a href="aboutme.html#education">Education</a>
+      <a href="aboutme.html#training-certificates">Certificates & Workshops</a>
+    </div>
+
+    <!-- Experience -->
+    <a href="aboutme.html#experience"><strong>Experience</strong></a>
+    <div class="sub-link">
+      <a href="aboutme.html#research-experience">Research Experience</a>
+      <a href="aboutme.html#teaching-experience">Teaching Experience</a>
+    </div>
+
+    <!-- Publications -->
+    <a href="aboutme.html#publications"><strong>Publications</strong></a>
+    <div class="sub-link">
+      <a href="aboutme.html#scientific-articles">Scientific Articles</a>
+      <a href="aboutme.html#conference-abstracts">Abstracts & Posters</a>
+      <a href="aboutme.html#software">Software</a>
+    </div>
+
+    <!-- Interests -->
+    <a href="aboutme.html#interests-activities"><strong>Activities & Interests</strong></a>
+<div class="sub-link">
+      <a href="aboutme.html#editing">Writing & Editing</a>
+      <a href="aboutme.html#clubs">Associations & Committees</a>
+      <a href="aboutme.html#fun">Fun & Relaxation</a>
+  </div>
+</div>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+
+
+  <div id="content">Loading...</div>
+
+  <script>
+    // Load markdown file
+    fetch("Using_Screens.md")
+      .then(res => res.text())
+      .then(text => {
+        document.getElementById("content").innerHTML = marked.parse(text);
+        hljs.highlightAll();
+
+        // Add copy buttons to all code blocks
+        document.querySelectorAll("pre code").forEach((block) => {
+          const button = document.createElement("button");
+          button.innerText = "Copy";
+          button.className = "copy-btn";
+          block.parentNode.style.position = "relative";
+          block.parentNode.appendChild(button);
+
+          button.addEventListener("click", () => {
+            navigator.clipboard.writeText(block.innerText);
+            button.innerText = "Copied!";
+            setTimeout(() => (button.innerText = "Copy"), 2000);
+          });
+        });
+      });
+  </script>
+</body>
+</html>
+
+
+
+
+  
