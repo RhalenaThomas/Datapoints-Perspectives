@@ -162,6 +162,13 @@ main p {
 } .image-box img:hover { transform: scale(1.5); 
                        }
 
+.image-box p {
+    font-size: 0.9em;
+    color: #3f7e91;
+    margin: 0;
+    line-height: 1.4;
+}
+
 /* ====== Links ====== */ 
 /* Default links (applies site-wide unless overridden) */ 
 a { color: #3f7e91; text-decoration: none; } 
