@@ -9,7 +9,7 @@ body {
 
 /* ====== Header Banner ====== */
 header {
-  background: linear-gradient(to left, #e6f5fa, #3f7e91);
+  background: linear-gradient(to left, #333, #63dbff,#3f7e91);
   color: white;
   padding: 12px 0;
   text-align: center;
