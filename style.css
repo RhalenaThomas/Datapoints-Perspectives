@@ -166,8 +166,8 @@ main p {
 /* Overlay text */
 .overlay {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
+  bottom: 5px;
+  left: 10px;
   transform: translateX(-50%);
   background: rgba(63, 126, 145, 0.9); /* teal semi-transparent */
   color: #fff;
