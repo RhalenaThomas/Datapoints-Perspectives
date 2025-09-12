@@ -1,8 +1,12 @@
 # Using screens in your terminal with cloud computing
 
-- In HPC it is the best practice to use "screens" this is like a separate window/desktop/tab but you are inside the same session.
-- Why?  
-1. So that when something is running you can do something else instead just staring at a black screen. 
+- "Screens" are like a separate window/desktop/tab but you are inside the same session (terminal BUT you cannot see or click a window)
+- You can find all the information about screens GNU here:  https://www.gnu.org/software/screen/
+- In High Performance Computing (HPC) systems it is the best practice to use "screens".
+  
+- Why use screens?
+    
+1. You can set up and enviroment and run code then "leave" the screen running. This way you are doing something else instead just staring at a black screen. 
 2. If you drop you internet connection or for some other reason get bumped out of your HPC your task will keep running.
 3. Always work in a screen when working in interactive mode. One most clusters you cannot access the internet instide of your interactive mode. If you are inside base R or working in python you would have to close your session to get file pathways or similar items (not practical).
 
