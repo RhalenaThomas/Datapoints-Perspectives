@@ -170,7 +170,7 @@ main p {
   background: rgba(63, 126, 145, 0.9); /* teal semi-transparent */
   color: #fff;
   font-size: 0.9em;
-  padding: 15px 12px;
+  padding: 20px 15px;
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
