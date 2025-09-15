@@ -6,5 +6,5 @@ https://rhalenathomas.github.io/Datapoints-Perspectives/index.html
 
 I am formatting the website in html and you can see all my documents here. 
 The site is hosted and deployed with gitpages. 
-If yoou want, you can make any of your repos into a "site" 
+Any github repo can be used to make a "site".  
 Feel free to use my html and style.css as templates to get started.  
