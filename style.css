@@ -165,10 +165,10 @@ main p {
                        }
 /* Overlay text */
 .overlay {
-  position: relative;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: center;
+  /*bottom: 5px;
+  /*left: 20px; 
+  transform: translateX(-50%); */
   background: rgba(63, 126, 145, 0.9); /* teal semi-transparent */
   color: #fff;
   font-size: 0.9em;
